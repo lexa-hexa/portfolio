@@ -1,0 +1,25 @@
+/*Değişken belirlemek için geçici değer atanmış asıl değerler theme içindedir*/
+:root{
+    /*Colors*/
+    --color-bg: initial;
+    --color-surface-2: initial;
+    --color-text: initial;
+    --color-muted: initial;
+    --color-border: initial;
+    --color-accent: initial;
+    /*Spaces*/
+    --space-1: 0;
+    --space-2: 0;
+    --space-3: 0;
+    --space-4: 0;
+    --space-5: 0;
+    /*Radius*/
+    --radius-1: 0;
+    --radius-2: 0;
+    --radius-3: 0;
+    /*Typography*/
+    --font-sans: initial;
+    --text-base: initial;
+    --text-lg: initial;
+    --text-xl: initial;
+}
