@@ -33,3 +33,83 @@
     display: flex;
     align-items: center;
 }
+.hamburger-btn{
+    display: none;
+}
+
+
+/*---------------Mobil-----------------*/
+@media(max-width: 1024px){
+    .site-header{
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .site-header .container{
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        border-radius: var(--radius-2);
+        gap: 10px;
+        font-size: var(--text-base);
+    }
+    .main-navbar{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: calc(100% + 10px);
+        display: flex;              
+        flex-direction: column;
+        gap: 10px;
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-1);
+        padding: 12px;
+        opacity: 0;
+        transform: translateY(-6px);
+        pointer-events: none;
+        max-height: 0;
+        overflow: hidden;
+
+        transition: opacity 180ms ease, transform 180ms ease, max-height 220ms ease;
+    }
+    .site-header .container.is-open .main-navbar{
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+        max-height: 500px; 
+    }
+    .main-navbar a{
+        display: block;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+    .main-navbar a:hover{
+        background: var(--color-surface-2);
+    }
+    .main-navbar a:active{
+        background: var(--color-surface-2);
+    }
+    .header-action{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .hamburger-btn{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: var(--radius-1);
+        padding: 8px;
+    }
+    .site-header .container.is-open .hamburger-btn{
+        background: var(--color-surface);
+        border-color: var(--color-border);
+    }
+}
