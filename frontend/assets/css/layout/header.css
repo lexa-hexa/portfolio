@@ -37,6 +37,16 @@
     display: none;
 }
 
+/*----------Aktif/Kapalı Dil Bölümü----------------*/
+.lang-switch .lang.active {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+/* Pasif dil (TR) */
+.lang-switch .lang.disabled {
+    color: var(--color-muted);
+    cursor: pointer;
+}
 
 /*---------------Mobil-----------------*/
 @media(max-width: 1024px){

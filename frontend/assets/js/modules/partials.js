@@ -14,7 +14,6 @@ function initHamburger(){
     const btn = document.querySelector(".hamburger-btn");
     const nav = document.querySelector(".main-navbar");
 
-    // ✅ hepsi yoksa çık
     if (!headerContainer || !btn || !nav) return;
 
     btn.addEventListener("click", () => {
