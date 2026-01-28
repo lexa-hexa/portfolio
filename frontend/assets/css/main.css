@@ -6,3 +6,5 @@
 @import "./layout/header.css";
 /*Components*/
 @import "./components/buttons.css";
+/*Sections*/
+@import "./layout/sections.css";

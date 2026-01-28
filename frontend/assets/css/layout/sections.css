@@ -1,0 +1,89 @@
+/*----------Home------------------*/
+body{
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+}
+.hero{
+    padding: 95px 0px;
+}
+.hero-container{
+    display: grid;
+    align-items: center;
+    gap: 28px;
+    grid-template-columns: 2fr 1fr;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.hero-content h1{
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+.hero-content h2{
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+.hero-content .description{
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+.hero-content .cv-download{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.hero-container .hero-social img{
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    width: auto;
+}
+.hero-container .hero-social a{
+    display: inline-flex;
+}
+.hero-visual img{
+    max-height: 340px;
+    width: auto;
+    display: block;
+}
+.cv-download .primary-btn{
+    text-decoration: none;
+    padding: 10px 16px;
+    display: inline-flex;
+    border: 1px solid var(--color-accent);
+    background: var(--color-accent);
+    border-radius: var(--radius-1);
+    color: var(--color-surface);
+    transition: background-color 220ms ease, border-color 220ms ease;
+}
+.cv-download .primary-btn:hover{
+    background: var(--color-accent-hover); 
+}
+.cv-download .secondary-btn{ 
+    text-decoration: none;
+    display: inline-flex;
+    padding: 10px 16px;
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-1);
+    color: var(--color-text);
+    transition: background-color 220ms ease, border-color 220ms ease;   
+}
+.cv-download .secondary-btn:hover{
+    background: var(--color-surface-2-hover); 
+}
+@media (max-width: 1024px)
+{
+    .hero{
+        padding: 50px;
+    }
+    .hero-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    .hero-visual{
+        display: none;
+    }
+}
+/*--------------------------------*/

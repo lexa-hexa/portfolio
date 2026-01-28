@@ -7,6 +7,12 @@
     --color-muted: #5F5F5F;
     --color-border: #D8D2CB;
     --color-accent: #C86A3A;
+    /*Hover Colors*/
+    --color-accent-hover: #B85F33;
+    --color-surface-hover: #F0ECE6;
+    --color-surface-2-hover: #D9D1C8;
+    --color-border-hover: #C9C2B9;
+    --color-text-hover: #141414;
     /*Spaces*/
     --space-1: 4px;
     --space-2: 8px;
