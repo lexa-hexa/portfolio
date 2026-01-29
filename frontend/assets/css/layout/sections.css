@@ -38,9 +38,19 @@ body{
     display: block;
     height: 40px;
     width: auto;
+    transition: background-color 220ms ease, border-color 220ms ease;
+}
+.hero-container .hero-social img:hover{
+    opacity: 0.90;
 }
 .hero-container .hero-social a{
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.hero-container .hero-social a:hover{
+    background: var(--color-surface-2-hover);
 }
 .hero-visual img{
     max-height: 340px;

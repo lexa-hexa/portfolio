@@ -19,6 +19,19 @@
     display: flex;
     gap: 20px;
 }
+.main-navbar a{
+    border-radius: var(--radius-1);
+    padding:  1px 10px;
+    transition: background-color 250ms ease, border-color 250ms ease;
+}
+.main-navbar a:hover{
+    background: var(--color-surface-2-hover);
+    border-bottom: 1px solid var(--color-accent);
+}
+.main-navbar a.active{
+    color: var(--color-text);
+    font-weight: 500;
+}
 .logo img{
     max-height: 24px;
     display: block;
